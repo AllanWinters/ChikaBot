@@ -49,19 +49,19 @@ const { ind } = require('./bahasa')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Sofyan AMV\n' //ganti nama lu! 
+            + 'FN:Allan Winters\n' //ganti nama lu! 
             + 'ORG: Owner Bot;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6281227825649:+62 812-2782-5649\n'  //ganti nomor lu! 
             + 'END:VCARD'
-prefix = 'z'
+prefix = '!'
 blocked = []   
 limitawal = 20
 memberlimit = 0
 cr = '*VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281227825649@s.whatsapp.net"]   //ganti nomor lu! 
-const pacarNumber = ["6281534162316@s.whatsapp.net"]  //ganti nomor lu!  
+const ownerNumber = ["6285158342254@s.whatsapp.net"]   //ganti nomor lu! 
+const pacarNumber = ["6285158342254@s.whatsapp.net"]  //ganti nomor lu!  
 /************************************/
 
        
