@@ -51,7 +51,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Allan Winters\n' //ganti nama lu! 
             + 'ORG: Owner Bot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6281227825649:+62 812-2782-5649\n'  //ganti nomor lu! 
+            + 'TEL;type=CELL;type=VOICE;waid=6285158342254:+62 851-5834-2254\n'  //ganti nomor lu! 
             + 'END:VCARD'
 prefix = '!'
 blocked = []   
@@ -287,7 +287,7 @@ chika.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Hallo* 👋 @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\nSemoga betah ya di sini 😅\nJangan lupa intro @${num.split('@')[0]} 😅`
+				teks = `*Hallo* 👋 @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\nSemoga betah ya 🤗\nJangan lupa intro 🙌`
 				let buff = await getBuffer(ppimg)
 				chika.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				} else if (anu.action == 'remove') {
@@ -297,7 +297,7 @@ chika.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Titip salam yah kak* @${num.split('@')[0]}\n*I will miss you* 🤭`
+				teks = `*Bye Bye* @${num.split('@')[0]} 👋\n*Semoga Tenang Kamu Disana :)*`
 				let buff = await getBuffer(ppimg)
 				chika.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -691,7 +691,7 @@ chika.on('group-participants-update', async (anu) => {
 			if (isGroup && isBadWord) {
             if (bad.includes(messagesC)) {
                 if (!isGroupAdmins) {
-                    return reply("JAGA UCAPAN DONG!! 😠")
+                    return reply("JAGA UCAPAN DONG! 😠")
                         .then(() => chika.groupRemove(from, sender))
                         .then(() => {
                             chika.sendMessage(from, `*「 ANTI BADWORD 」*\nKamu dikick karena berkata kasar!`, text ,{quoted: mek})
